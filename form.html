@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form | Sample Website</title>
+    </head>
+    <body>
+        <header>
+            <h2>Logo.</h2>
+            <nav>
+                <a href="index.html">
+                    <p>Home</p>
+                </a>
+                <a href="page2.html">
+                    <p>Page 2</p>
+                </a>
+                <a href="#">
+                    <p>Form</p>
+                </a>
+            </nav>
+        </header>
+        <main>
+            <form action="" method="get">
+                <label for="fn">First Name</label>
+                <input
+                    type="text"
+                    id="fn"
+                    name="firstname"
+                    placeholder="e.g John"
+                    required
+                />
+                <br />
+                <label for="ln">Last Name</label>
+                <input type="text" id="ln" name="lastname" />
+                <br />
+                <label for="email">Email</label>
+                <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="e.g someone@example.com"
+                />
+                <br />
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" />
+                <br />
+                <label for="doa">Date of Appointment</label>
+                <input type="date" id="doa" name="doa" max="2010-01-01" />
+                <!--YYYY-MM-DD-->
+                <br />
+                <label for="us">Upload Selfie</label>
+                <input type="file" name="us" id="us" />
+                <br />
+                <label for="fc">Favourite Color</label>
+                <input type="color" name="fc" id="fc" />
+                <br />
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" min="18" max="25" />
+                <br />
+                <label for="nationality">Select your country</label>
+                <select name="nationality" id="nationality">
+                    <option value="" disabled selected>---Countries---</option>
+                    <optgroup label="Africa">
+                        <option value="nigeria">Nigeria</option>
+                        <option value="ghana">Ghana</option>
+                    </optgroup>
+                    <optgroup label="America">
+                        <option value="united-states">United States</option>
+                        <option value="canada">Canada</option>
+                    </optgroup>
+                    <optgroup label="Asia">
+                        <option value="japan">Japan</option>
+                        <option value="china">China</option>
+                    </optgroup>
+                </select>
+                <br />
+                <!-- creating checkbox in  HTML form -->
+                <label for="hobby">Select your hobby</label>
+                <br />
+                <label for="swimming">Swimming</label>
+                <input type="checkbox" name="hobby" id="swimming" />
+                <label for="gamming">Gamming</label>
+                <input type="checkbox" name="hobby" id="gamming" checked />
+                <label for="cooking">Cooking</label>
+                <input type="checkbox" name="hobby" id="cooking" />
+                <br />
+                <!-- making a radio input in html  -->
+                <label for="gender">Select your gender</label>
+                <br />
+                <label for="male">Male</label>
+                <input
+                    type="radio"
+                    name="gender"
+                    id="male"
+                    value="male"
+                    checked
+                />
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female" value="female" />
+                <br />
+                <label for="comment">Comment</label>
+                <textarea name="comment" id="comment" rows="10" cols="40"></textarea>
+
+                <br>
+                <button>Submit</button>
+                <input type="button" name="" id="" value="Click" />
+            </form>
+        </main>
+        <footer></footer>
+    </body>
+</html>
